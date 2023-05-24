@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+:root {
+    --bg-color: #0f0f0f;
+}
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.content,
+.result {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.inputfield {
+    width: 400px;
+    background-color: #121212;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid white;
+    caret-color: white;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    border: 0px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: filter 0.5s, transform 0.5s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-5px);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
+    transition: filter 0.5s;
+}
+
+a:hover {
+    filter: brightness(0.8);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+iframe {
+    width: 70%;
+    height: 600px;
+}
+
+.options {
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+}
+
+.options p {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    a {
+        display: block;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .inputfield {
+        font-size: 13px;
+    }
+
+    .options {
+        width: 100%;
+    }
+
+    iframe {
+        width: 90%;
+    }
+}
